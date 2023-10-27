@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 9.6">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <path id="_패스_1" data-name="패스 1" class="cls-1" d="m2.46,2.95h5.89V0H0v9.6h8.35v-2.77H2.46v-3.88Z"/>
+  <rect id="_사각형_7" data-name="사각형 7" class="cls-1" x="14.57" width="2.46" height="9.6"/>
+  <path id="_패스_1-2" data-name="패스 1" class="cls-1" d="m35.43,2.95h5.89V0h-8.35v9.6h8.35v-2.77h-5.89v-3.88Z"/>
+  <rect id="_사각형_7-2" data-name="사각형 7" class="cls-1" x="47.54" width="2.46" height="9.6"/>
+  <rect id="_사각형_7-3" data-name="사각형 7" class="cls-1" x="20.2" y="4.18" width="9.6" height="1.23" transform="translate(3.93 19.08) rotate(-45)"/>
+  <rect id="_사각형_7-4" data-name="사각형 7" class="cls-1" x="24.39" y="0" width="1.23" height="9.6" transform="translate(3.93 19.08) rotate(-45)"/>
+</svg>
