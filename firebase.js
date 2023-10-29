@@ -17,8 +17,6 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 const commentsCollection = collection(db, 'comments');
-const query = query(commentsCollection, orderBy('timestamp', 'desc'));
-
 
 // 댓글 추가 함수
 function addComment(userName, commentText) {
