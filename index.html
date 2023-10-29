@@ -7,10 +7,12 @@
   <!--AOS 라이브러리-->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!-- JQuery -->
+  <!-- JQuery -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
+  <!-- Firebase -->
+  <script src="databse/firebase.js"></script>
   <script src="pagetransition.js"></script>
+  <!-- Favicon -->
   <link rel="icon" href="contents/favicon.ico" type="image/x-icon">
   <title>디지털디자인과 2023년 2학기 과제전</title>
 </head>
@@ -36,18 +38,17 @@
       <a data-aos="fade" data-aos-duration="2000" data-aos-once="true" href='https://www.facebook.com/dxdesign.cu.ac.kr/' target="_blank"><div class='rButton'><img src='contents/facebook-b.svg'></div></a>
       <a data-aos="fade" data-aos-duration="2000" data-aos-once="true" href='https://www.instagram.com/dcudxd/' target="_blank"><div class='rButton'><img src='contents/instagram-b.svg'></div></a>
     </div>
-
   </div>
 
+  <script type="module" src="firebase.js"></script>
   <h1>댓글 시스템</h1>
-  <div id="comments">
-      <!-- 여기에 댓글이 표시됩니다 -->
-  </div>
-  <form id="commentForm">
-      <input type="text" id="commentText" placeholder="댓글을 입력하세요">
-      <button type="submit">댓글 작성</button>
-  </form>
-  <script src="post.js"></script>
+  <input type="text" id="user-name" placeholder="사용자 이름">
+  <textarea id="comment-text" placeholder="댓글 내용"></textarea>
+  <button id="post-comment">댓글 작성</button>
+  <ul id="comments-list">
+    <!-- 여기에 댓글이 동적으로 추가될 것입니다 -->
+  </ul>
+
 
   <!--Footer Code-->
   <div class="footer-container">
@@ -62,5 +63,8 @@
   </div>
 
 </body>
+<!--Express 서버 파일-->
+<script src="index.js"></script>
+<!--AOS 적용을 위한 스크립트 연결 코드-->
 <script>AOS.init();</script>
 </html>
