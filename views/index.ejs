@@ -40,14 +40,16 @@
   </div>
 
   <!--comment Code-->
-  <div id="form-commentInfo">
-    <div id="comment-count">방명록</div>
-    <input id="comment-input" placeholder="댓글을 입력해 주세요.">
-    <button id="submit">등록</button>
+  <div class="comment-container">
+    <div id="form-commentInfo">
+      <div id="comment-count">디디인들에게 메세지를 남겨보세요!</div>
+      <div id="comment-text">욕설 및 비방은 삼가해 주세요.</div>
+      <input id="username" placeholder="이름"></input>
+      <input id="comment-input" placeholder="고생한 디디인들에게 한마디!">
+      <button id="submit">등록</button>
+    </div>
+    <div id=comments></div>
   </div>
-  <div id=comments>
-    <script src="/comment_function.js"></script>
-
 
   <!--Footer Code-->
   <div class="footer-container">
@@ -64,4 +66,5 @@
 </body>
 <!--AOS 적용을 위한 스크립트 연결 코드-->
 <script>AOS.init();</script>
+<script src="/comment_function.js"></script>
 </html>

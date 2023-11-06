@@ -265,28 +265,85 @@ body{
     transition: 0.5s;
 }
 
-/* 댓글 */
+/* 댓글 Style */
+
+.comment-container{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: center;
+    width: 80%;
+    margin-top: 100px;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 250px;
+}
 
 #form-commentInfo{
-    width: 100%;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 #comment-count{
-    margin-bottom: 10px; 
+    margin-bottom: 5px;
+    font-size: 30px;
+    font-family: 'R';
+}
+
+#comment-text{
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-family: 'L';
+    color: #7a7a7a;
+}
+
+#username{
+    width: 10vw;
+    height: 40px;
+    border-radius: 15px;
+    border: none;
+    text-indent: 10px;
+    margin-bottom: 15px;
 }
 
 #comment-input{
-    width: 50%;
-    height: 3.3em;
+    width: 100%;
+    height: 40px;
+    border-radius: 15px;
+    border: none;
+    text-indent: 10px;
+    margin-bottom: 15px;
+}
+
+
+input::placeholder {
+    margin-left: 10px;
+}
+
+input:focus {
+    background-color: rgb(229, 233, 244);
+    border: none;
+    outline: none;
 }
 
 #submit{
     background-color: rgb(0, 128,255);
-    width: 5.5em;
-    height: 3.3em;;
+    width: 7em;
+    height: 50px;
     font-size: 15px;
     font-weight: bold;
+    border-radius: 15px;
     color: aliceblue;
+    border: none;
+    transition: 0.5s;
+}
+
+#submit:hover{
+    background-color:rgb(6, 102, 197);
+    transition: 0.5s;
 }
 
 #voteUp, #voteDown{
@@ -295,11 +352,18 @@ body{
 }
 
 #comments{
-    margin-top: 10px;
-}
+    overflow-y:scroll;
+    width: 40vw;
+    background: linear-gradient(to top,  transparent, rgba(255, 255, 255, 0.5) 100%);
+    border-radius: 15px;
+}   
+
+#comments::-webkit-scrollbar {
+    background-color: transparent;
+  }
 
 .eachComment{   
-    width :50%; 
+    width :90%; 
     margin: 10px;  
     padding: 0.5em; 
     border-bottom: 1px solid #c1bcba;
@@ -315,29 +379,32 @@ body{
 
 .eachComment .inputValue{
     font-size: 1.2em;
-    font-style: italic;    
+    color: #5f5f5f;   
 }
 
 .eachComment .time{
     font-size: 0.7em;
     color: #c1bcba;
-    font-style: oblique;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
     
 }
 
 .eachComment .voteDiv{
-    display: flex;
-    justify-content: flex-end;
+    text-align: right;
 }
 
-.eachComment .deleteComment{
-    background-color: red;
-    color: aliceblue;
+.voteDown{
+    margin-left: 10px;
 }
 
 
+@media (max-width:1440px) {
+    #comment-count{
+        font-size: 27px;
+    }
+    
+}
 
 /* About Style */
 

@@ -48,22 +48,6 @@ server.post("/add-comment", (req, res) => {
   res.json(newComment);
 });
 
-server.delete("/delete-comment/:commentId", (req, res) => {
-  const commentId = parseInt(req.params.commentId, 10);
-  const index = comments.findIndex(comment => comment.id === commentId);
-
-  if (index !== -1) {
-    // 댓글 배열에서 댓글 제거
-    comments.splice(index, 1);
-
-    // 수정된 댓글 배열로 JSON 파일 업데이트
-    writeCommentsToFile(comments);
-
-    res.sendStatus(200);
-  } else {
-    res.status(404).send("댓글을 찾을 수 없습니다.");
-  }
-});
 
 // 댓글 데이터를 파일에 쓰는 함수
 function writeCommentsToFile(data) {
